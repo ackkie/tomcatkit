@@ -28,6 +28,7 @@ CATALINA_OPTS="${CATALINA_OPTS} -Dcom.sun.management.jmxremote.port=10000 \
 #-XX:+PrintGCTimeStamps -XX:+PrintClassHistogram"
 
 CATALINA_OPTS="${CATALINA_OPTS} -Xloggc:${GCLOG} -verbose:gc \
+-XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=10 -XX:GCLogFileSize=10M \
 -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintGCDetails"
 
 export LANG
